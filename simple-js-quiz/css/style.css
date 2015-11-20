@@ -1,5 +1,5 @@
 body{
-	background:#f06226;
+	background:rgb(0, 0, 0);
 	color:#fff;
 	font-family:'Arial', sans-serif;
 	font-size:14px;
@@ -7,7 +7,7 @@ body{
 
 #container{
 	width:60%;
-	background:rgba(255,165,0, 0.8);
+	background:rgba(255,165,0,0.8);
 	margin:20px auto;
 	overflow:auto;
 	padding:25px;
