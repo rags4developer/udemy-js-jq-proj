@@ -40,6 +40,7 @@ footer{
 input[type='submit']{
 	background:#f06226;
 	border:0;
+	font-size: 1.1em;
 	color:#fff;
 	padding:10px 15px;
 	cursor:pointer;
