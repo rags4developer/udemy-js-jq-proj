@@ -56,3 +56,11 @@ input[type='submit']{
 	color:#000;
 	font-weight:bold;
 }
+.popup {
+	background: rgb(0, 0, 0);
+	color: rgb(255,255,255);
+	max-width: 500px;
+	width:200px; 
+	height:80px;
+	//display:none;
+}

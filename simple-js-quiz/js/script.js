@@ -12,6 +12,9 @@ function submitAnswers(){
 	// Validation
 	for(i = 1; i <= total;i++){
 		if(eval('q'+i) == null || eval('q'+i) == ''){
+			var popup = document.getElementsByClassName("popup");
+			console.log(typeof popup);
+			popup.innerHTML = 'You missed question '+ i;
 			alert('You missed question '+ i);
 			return false;
 		}
