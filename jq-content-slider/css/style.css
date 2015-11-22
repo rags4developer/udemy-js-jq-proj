@@ -32,5 +32,11 @@ h1 {
 	*/
 	width: 940px;
 	height: 350px;
+	position: relative; /*http://alistapart.com/article/css-positioning-101*/
+	overflow: hidden; /*hidden because we want only one slide/image to appear at a time.*/
+	float: left; /*https://css-tricks.com/all-about-floats/*/
+	padding: 3px;
+	border: #666 solid 2px;
+	border-radius: 5px;
 }
 
