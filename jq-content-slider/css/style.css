@@ -51,6 +51,15 @@ h1 {
 	margin-top: 130px;
 	cursor: pointer;
 	position: relative;
+/*http://webdesign.tutsplus.com/articles/what-you-may-not-know-about-the-z-index-property--webdesign-16892*/
 	z-index: 100;
+}
+
+#prev {
+	margin-right: -45px;
+}
+
+#next {
+	margin-left: -45px;
 }
 
