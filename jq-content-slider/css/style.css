@@ -28,7 +28,7 @@ h1 {
 }
 
 #slider {
-	/*set height and width same as that of the images. In future versions or this code, try using some code which will resize the images dynamically. 
+	/*set height and width same as that of the images. Lets try to use some code which will resize the images dynamically !!!
 	*/
 	width: 940px;
 	height: 350px;
