@@ -74,7 +74,33 @@ $(document).ready(function() {
 		//Animation for changing slides.
 		$('.slide').fadeOut(sliding_speed);
 		$('.active').fadeIn(sliding_speed);
-	});	
+	});
+	
+	//Code to change the slides automatically
+	if(autoswitch === true) {
+		//Copied the code from the function which is executed when next button is pressed.
+		var nextSlideFn = function(){
+
+			$('.active').removeClass('active').addClass('oldActive');
+			
+			if($('.oldActive').is(':last-child')) {
+				$('.slide').first().addClass('active');
+			}else {
+				$('.oldActive').next().addClass('active');
+			}
 		
+			$('.oldActive').removeClass('oldActive');
+		
+			$('.slide').hide();
+			$('.active').show();
+		
+			$('.slide').fadeOut(sliding_speed);
+			$('.active').fadeIn(sliding_speed);
+		};
+		
+		setInterval(nextSlideFn, autoswitch_speed);
+	}
+	
 });
+
 
