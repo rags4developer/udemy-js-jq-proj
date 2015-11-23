@@ -26,6 +26,10 @@ $(document).ready(function() {
 		$('.oldActive').removeClass('oldActive');
 		$('.slide').hide();
 		$('.active').show();
+		
+		//Animation
+		$('.slide').fadeOut(sliding_speed);
+		$('.active').fadeIn(sliding_speed);
 	});
 	
 }); 
