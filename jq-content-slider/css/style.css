@@ -57,6 +57,7 @@ h1 {
 	padding: 20px;
 	background: #7f7f7f;
 	background: rgba(0,0,0,0.5);
+	width: 100%;
 }
 
 #prev, #next {
