@@ -9,5 +9,12 @@ $(document).ready(function() {
 	
 	//Add the class 'active' to the first slide only.
 	$('.slide').first().addClass('active');
+
+	//Hide all slides, but...
+	$('.slide').hide();
+	
+	//...show only the first slide
+	$('.active').show();
+	
 }); 
 
