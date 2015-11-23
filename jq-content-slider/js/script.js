@@ -16,5 +16,17 @@ $(document).ready(function() {
 	//...show only the first slide
 	$('.active').show();
 	
+	$('#next').on('click', function(){
+		$('.active').removeClass('active').addClass('oldActive'); /*'Hide the currently active slide and mark it as oldActive so that you can go back to it using the previous button.'*/
+		if($('.oldActive').is(':last-child')) {
+			$('.slide').first().addClass('active');
+		}else {
+			$('.oldActive').next().addClass('active');
+		}
+		$('.oldActive').removeClass('oldActive');
+		$('.slide').hide();
+		$('.active').show();
+	});
+	
 }); 
 
