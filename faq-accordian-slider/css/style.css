@@ -1,0 +1,17 @@
+
+/*Set css for all body elements. We can override them for an any element if needed.*/
+body * {
+	padding: 0px;
+	margin: 0px;
+}
+
+.que {
+	padding: 5px;
+	margin:0px;
+}
+
+.ans {
+	padding: 5px;
+	border: 2px solid black;
+	visibility: visible; /*hidden to hide the elements.*/
+}
