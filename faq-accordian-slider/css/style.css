@@ -14,5 +14,5 @@ body * {
 .ans {
 	padding: 5px;
 	border: 1px solid black;
-	visibility: visible; /*hidden to hide the elements.*/
+	display: none; /*visibility:hidden will not help. There will be gaps between questions.*/
 }
