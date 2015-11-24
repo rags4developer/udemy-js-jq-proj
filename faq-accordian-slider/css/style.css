@@ -16,3 +16,4 @@ body * {
 	border: 1px solid black;
 	display: none; /*visibility:hidden will not help. There will be gaps between questions.*/
 }
+
