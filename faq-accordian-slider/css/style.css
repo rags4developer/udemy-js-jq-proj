@@ -5,6 +5,11 @@ body * {
 	margin: 0px;
 }
 
+#container {
+	width: 500px;
+	margin: 0 auto;
+}
+
 .que {
 	padding: 5px;
 	border: 1px solid black;
