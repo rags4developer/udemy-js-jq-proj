@@ -1,7 +1,7 @@
 $('document').ready(function() {
 	$('.que').click(function() {
 		//Hide all answers except the one for clicked question.
-		$('.ans').hide();
+		$('.ans').not($(this).next()).hide();
 		$(this).next().toggle();
 	});
 });
