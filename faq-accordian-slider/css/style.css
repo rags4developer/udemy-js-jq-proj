@@ -7,11 +7,12 @@ body * {
 
 .que {
 	padding: 5px;
+	border: 1px solid black;
 	margin:0px;
 }
 
 .ans {
 	padding: 5px;
-	border: 2px solid black;
+	border: 1px solid black;
 	visibility: visible; /*hidden to hide the elements.*/
 }
