@@ -10,6 +10,7 @@ body * {
 	border: 1px solid black;
 	margin:0px;
 	background-color: rgba(109, 179, 63, 0.7);
+	border-radius: 10px;
 	width: 500px;
 }
 
@@ -18,6 +19,7 @@ body * {
 	border: 1px solid black;
 	display: none; /*visibility:hidden will not help. There will be gaps between questions.*/
 	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
 	width: 500px;
 }
 
