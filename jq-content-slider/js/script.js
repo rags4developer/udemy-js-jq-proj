@@ -17,8 +17,18 @@ $(document).ready(function() {
 	$('.active').show();
 	
 	//Code to execute when next button is pressed.
-	$('#next').on('click', function(){
-		
+	$('#next').on('click', nextSlide);
+	
+	//Code to execute when previous button is pressed.	
+	$('#prev').on('click', prevSlide);
+	
+	//Code to change the slides automatically
+	if(autoswitch === true) {
+		setInterval(nextSlide, autoswitch_speed);
+	}
+
+	//Switch to the next slide.
+	function nextSlide() {
 		/* Remove the active marking for current slide and mark the current slide as oldActive.
 		  oldActive will help us to access the next slide by referencing the currently displayed one.
 		*/
@@ -43,12 +53,11 @@ $(document).ready(function() {
 		
 		//Animation for changing slides.
 		$('.slide').fadeOut(sliding_speed);
-		$('.active').fadeIn(sliding_speed);
-	});
+		$('.active').fadeIn(sliding_speed);			
+	}
 	
-	//Code to execute when previous button is pressed.	
-	$('#prev').on('click', function(){
-		
+	//Switch to the previous slide 
+	function prevSlide() {
 		/* Remove the active marking for current slide and mark the current slide as oldActive.
 		  oldActive will help us to access the next slide by referencing the currently displayed one.
 		*/
@@ -73,33 +82,8 @@ $(document).ready(function() {
 		
 		//Animation for changing slides.
 		$('.slide').fadeOut(sliding_speed);
-		$('.active').fadeIn(sliding_speed);
-	});
-	
-	//Code to change the slides automatically
-	if(autoswitch === true) {
-		//Copied the code from the function which is executed when next button is pressed.
-		var nextSlideFn = function(){
-
-			$('.active').removeClass('active').addClass('oldActive');
-			
-			if($('.oldActive').is(':last-child')) {
-				$('.slide').first().addClass('active');
-			}else {
-				$('.oldActive').next().addClass('active');
-			}
-		
-			$('.oldActive').removeClass('oldActive');
-		
-			$('.slide').hide();
-			$('.active').show();
-		
-			$('.slide').fadeOut(sliding_speed);
-			$('.active').fadeIn(sliding_speed);
-		};
-		
-		setInterval(nextSlideFn, autoswitch_speed);
-	}
+		$('.active').fadeIn(sliding_speed);		
+	}	
 	
 });
 
