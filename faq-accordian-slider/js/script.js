@@ -1,7 +1,7 @@
 $('document').ready(function() {
-	$('.que').toggle(function() {
-		$(this).next().css("display", "inline");
-	}, function() {
-		$(this).next().css("display", "none");
+	$('.que').click(function() {
+		//Hide all answers except the one for clicked question.
+		$('.ans').hide();
+		$(this).next().toggle();
 	});
 });
