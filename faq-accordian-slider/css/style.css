@@ -1,12 +1,12 @@
 
 /*Set css for all body elements. We can override them for an any element if needed.*/
 body * {
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 }
 
 #container {
-	width: 500px;
+	width: 60%;
 	margin: 0 auto;
 }
 
@@ -16,7 +16,6 @@ body * {
 	margin:0px;
 	background-color: rgba(140, 140, 140, 0.3);
 	border-radius: 10px;
-	width: 500px;
 }
 
 .que * {
@@ -29,6 +28,10 @@ body * {
 	display: none; /*visibility:hidden will not help. There will be gaps between questions.*/
 	background-color: rgba(193, 193, 193, 0.1);
 	border-radius: 10px;
-	width: 500px;
 }
 
+@media(max-width: 500px) {
+	#container {
+		width: 90%;
+	}
+}
