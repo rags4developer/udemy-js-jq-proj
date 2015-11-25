@@ -41,7 +41,7 @@ p {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 
-	background: url("img/panel.jpg") repeat-x bottom center #ffffff; /*repeat horizontally.*/
+	background: url("../img/panel.jpg") repeat-x bottom center #ffffff; /*repeat horizontally.*/
 	width: 900px;
 	overflow: hidden;
 }
