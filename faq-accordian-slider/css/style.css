@@ -23,7 +23,7 @@ body * {
 	padding: 5px;
 	border: 1px solid black;
 	display: none; /*visibility:hidden will not help. There will be gaps between questions.*/
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(193, 193, 193, 0.1);
 	border-radius: 10px;
 	width: 500px;
 }
