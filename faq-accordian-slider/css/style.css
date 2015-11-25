@@ -19,6 +19,10 @@ body * {
 	width: 500px;
 }
 
+.que * {
+	display: inline;
+}
+
 .ans {
 	padding: 5px;
 	border: 1px solid black;
