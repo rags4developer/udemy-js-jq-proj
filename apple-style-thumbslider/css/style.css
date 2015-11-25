@@ -32,10 +32,6 @@ p {
 	text-align: center;
 }
 
-.head {
-	background: url("../img/panel.jpg") repeat-x bottom center #ffffff;
-}
-
 #slider {
 	-moz-box-shadow: 0 0 3px #aaaaaa;
 	-webkit-box-shadow: 0 0 3px #aaaaaa;
