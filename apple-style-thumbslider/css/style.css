@@ -32,6 +32,13 @@ p {
 	text-align: center;
 }
 
+header {
+	background: url("../img/panel.jpg") repeat-x bottom center #ffffff;
+	height: 30px;
+	padding-top: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
 #slider {
 	-moz-box-shadow: 0 0 3px #aaaaaa;
 	-webkit-box-shadow: 0 0 3px #aaaaaa;
@@ -46,17 +53,61 @@ p {
 	overflow: hidden;
 }
 
-.slide img {
-	width: auto;
-	height: 200px;
+#slides {
+	height: 240px;
+	width: 900px;
+	overflow: hidden;
+	padding-top: 20px;
 }
 
-.thumb {
-	width: auto;
-	height: 40px;
+.slide {
+	float: left !important;
 }
 
-ul {
+#menu {
+	height: 45px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#menu li {
+	width: 60px;
+	margin-left: -4px;
+	display: inline-block;
 	list-style: none;
-	display: inline;
+	height: 45px;
+	overflow: hidden;
 }
+
+/*Will add active class with jQuery*/
+#menu li.active, li.active: hover {
+	background: url("img/active_bg.png") no-repeat;
+}
+
+#menu li.active {
+	cursor: default;
+}
+
+#menu.sep {
+	width: 2px;
+	background: url("img/seperator.png") no-repeat right; /*No repeating the image. Its aligned to the right*/
+	margin-right: -2px;
+}
+
+#menu li a {
+	display: block;
+	background: url("img/seperator.png") no-repeat right;
+	height: 35px;
+	padding-top: 10px;
+}
+
+#menu img {
+	border:none;
+	width: auto;
+	height: 35px;
+}
+
+
