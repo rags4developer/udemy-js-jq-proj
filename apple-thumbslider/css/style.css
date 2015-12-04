@@ -32,6 +32,13 @@ p {
 	text-align: center;
 }
 
+header {
+	background:url(../img/panel.jpg) repeat-x bottom center #fff;
+	height: 30px;
+	padding-top: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
 #slider {
 	/*horizontal offset, vertical offset, blur radius(optional), spread radius(optional), color*/
 	-moz-box-shadow: 0 0 3px #aaa;
