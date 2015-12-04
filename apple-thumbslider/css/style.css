@@ -16,3 +16,14 @@ body {
 	width: 900px;
 	position: relative;
 }
+
+a, a:visited {
+	color: #019e63;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
