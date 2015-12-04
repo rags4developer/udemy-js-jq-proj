@@ -10,3 +10,9 @@ body {
 	font-family: "Arial", sans-serif;
 }
 
+#container {
+	margin: 15px auto;
+	text-align: center;
+	width: 900px;
+	position: relative;
+}
