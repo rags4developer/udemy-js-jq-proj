@@ -27,3 +27,27 @@ a:hover {
 	text-decoration: underline;
 }
 
+p {
+	padding-top: 10px;
+	text-align: center;
+}
+
+#slider {
+	/*horizontal offset, vertical offset, blur radius(optional), spread radius(optional), color*/
+	-moz-box-shadow: 0 0 3px #aaa;
+	-webkit-box-shadow: 0 0 3px #aaa;
+	box-shadow: 0 0 3px #aaa;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	/*image, repeat, (position), color. Note - Background has 8 properties.
+	  https://css-tricks.com/almanac/properties/b/background/
+	*/
+	background: url(../img/panel.jpg) repeat-x bottom center #fff;
+	width: 900px;
+	overflow: hidden; /*content overflowing out of this element will be hidden. eg bullet points.*/
+	
+}
+
