@@ -68,3 +68,7 @@ header {
 .slide {
 	float:left !important;/*Apply this css rule and ignore any rules that override this rule.*/
 }
+
+#menu {
+	height: 45px;
+}
