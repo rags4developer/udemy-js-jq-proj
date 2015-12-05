@@ -65,3 +65,6 @@ header {
 	padding-top: 20px;
 }
 
+.slide {
+	float:left !important;/*Apply this css rule and ignore any rules that override this rule.*/
+}
