@@ -89,10 +89,16 @@ header {
 
 /*The active class will be added using jQuery. Note that :hovers is a `pseudo class`. Also, li.active is NOT the
 same as li .active !!!*/
-li.active, li.active:hover {
+#menu li.active, #menu li.active:hover {
 	background: url(../img/active_bg.png);
 }
 
 li.active {
 	cursor: default;
+}
+
+.sep {
+	width: 2px;
+	background: url(../img/seperator.png) no-repeat right;
+	margin-right: -2px;/*Really need -ve ?*/
 }
