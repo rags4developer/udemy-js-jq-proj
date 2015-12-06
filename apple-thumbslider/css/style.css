@@ -69,6 +69,11 @@ header {
 	float:left !important;/*Apply this css rule and ignore any rules that override this rule.*/
 }
 
+.slide img {
+	width: 900px;
+	height: 200px;
+}
+
 #menu {
 	height: 45px;
 }
@@ -80,17 +85,17 @@ header {
 
 #menu li {
 	width: 60px;
+	height: 45px;
 	margin-left: -4px; /*Why do we need this ?*/
 	display: inline-block;
 	list-style:none;
-	height: 45px;
-	overflow: none;
+	overflow: hidden;
 }
 
 /*The active class will be added using jQuery. Note that :hovers is a `pseudo class`. Also, li.active is NOT the
 same as li .active !!!*/
 #menu li.active, #menu li.active:hover {
-	background: url(../img/active_bg.png);
+	background: url(../img/active_bg.png) no-repeat;
 }
 
 #menu li.active {
