@@ -93,12 +93,24 @@ same as li .active !!!*/
 	background: url(../img/active_bg.png);
 }
 
-li.active {
+#menu li.active {
 	cursor: default;
 }
 
-.sep {
+#menu .sep {
 	width: 2px;
 	background: url(../img/seperator.png) no-repeat right;
 	margin-right: -2px;/*Really need -ve ?*/
 }
+
+#menu li a {
+	display: block;
+	background: url(../img/seperator.png) no-repeat right;
+	height: 35px;
+	padding-top: 10px;
+}
+
+#menu a img {
+	border: none;
+}
+
